@@ -8,7 +8,7 @@
 :root {
     --page-bg: #d9d9d9;       /* gray background */
     --text: #2b2b2b;          /* main text */
-    --header-green: #2e7d32;  /* headings */
+    --header-green: #FF69B4;  /* headings */
     --pink: #ff4f9a;          /* buttons and accents */
     --pink-dark: #d81b7a;     /* link text (easier to read on gray) */
     --panel: #f2f2f2;         /* light box behind the graphic */
