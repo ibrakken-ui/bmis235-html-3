@@ -22,29 +22,21 @@
 
 <h1>Indie &amp; Co.</h1>
 <p>Welcome to Indie &amp; Co., a professional organizing business that turns cluttered closets, overflowing garages, and chaotic home offices into calm, functional spaces.</p>
+
+<div class="photo">
+    <a href="page1.html"><img src="img/closet.jpg" alt="An organized closet. Click to see our services."></a>
+</div>
+
 <p>Browse our <a href="page1.html">Services</a>, see how <a href="page2.html">Our Process</a> works, or head to <a href="page3.html">Contact</a> to book a free consultation.</p>
 
 <h2>Try it: where should we start?</h2>
 <div class="showcase">
-    <style>
-        .showcase .picker button {
-            background: #ff4f9a color: #0b1d3a; border: 0; border-radius: 20px;
-            padding: 10px 18px; margin: 4px; font-weight: bold; cursor: pointer;
-        }
-        .showcase .picker button:hover { background: #ffd1e6; }
-        .showcase #tip {
-            margin-top: 14px; padding: 14px; border-left: 4px solid #ff4f9a;
-            background: #14305c; color: #fff; min-height: 24px;
-        }
-    </style>
-    <div class="picker">
-        <p>Pick the space you want to tame:</p>
-        <button onclick="showTip('closet')">Closet</button>
-        <button onclick="showTip('office')">Home Office</button>
-        <button onclick="showTip('kitchen')">Kitchen</button>
-        <button onclick="showTip('garage')">Garage</button>
-        <div id="tip">Click a space to get your first organizing tip.</div>
-    </div>
+    <p>Pick the space you want to tame:</p>
+    <button onclick="showTip('closet')">Closet</button>
+    <button onclick="showTip('office')">Home Office</button>
+    <button onclick="showTip('kitchen')">Kitchen</button>
+    <button onclick="showTip('garage')">Garage</button>
+    <div id="tip">Click a space to get your first organizing tip.</div>
     <script>
         function showTip(space) {
             var tips = {
