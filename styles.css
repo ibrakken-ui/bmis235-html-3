@@ -4,13 +4,13 @@
    This one file is the brand guide for Indie & Co.
    Navy blue: #0b1d3a  |  Pink accent: #ff4f9a  |  Light pink: #ffb3d4
    ===================================================================== */
-
 body {
     font-family: Georgia, "Times New Roman", serif;
     background-color: #808080;
     color: #ffffff;
     margin: 0;
     padding: 0 20px 40px 20px;
+    text-align: center;
 }
 
 /* the menu at the top of every page */
