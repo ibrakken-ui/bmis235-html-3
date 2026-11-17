@@ -1,63 +1,44 @@
-/* Indie Brakken - BMIS 235 site */
-:root{
-  --ink:#12343b;      /* canal */
-  --brick:#a63d2f;    /* Amsterdam brick */
-  --paper:#eef2f3;
-  --white:#ffffff;
-  --muted:#4d6368;
-}
-*{box-sizing:border-box}
-body{
-  margin:0;
-  background:var(--paper);
-  color:var(--ink);
-  font-family:"Segoe UI",Helvetica,Arial,sans-serif;
-  line-height:1.6;
-}
-nav{
-  display:flex;
-  flex-wrap:wrap;
-  gap:6px;
-  justify-content:center;
-  padding:14px 12px;
-  background:var(--ink);
-}
-nav a{display:block;border-bottom:4px solid transparent}
-nav img{display:block;max-width:100%;height:auto}
-nav a:hover,nav a:focus{border-bottom-color:var(--brick);outline:none}
-/* highlights the current page without changing the nav code */
-#home nav a[href="index.html"],
-#about nav a[href="page1.html"],
-#experience nav a[href="page2.html"],
-#goals nav a[href="page3.html"]{border-bottom-color:var(--brick)}
-main{max-width:46rem;margin:0 auto;padding:2.5rem 1.25rem 3rem}
-h1{
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:2.6rem;
-  line-height:1.15;
-  margin:0 0 .5rem;
-}
-h2{
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:1.5rem;
-  margin:2.2rem 0 .4rem;
-  padding-left:.7rem;
-  border-left:5px solid var(--brick);
-}
-.tagline{font-size:1.25rem;color:var(--muted);margin:0 0 1.5rem}
-p{max-width:40rem}
-ul{padding-left:1.2rem}
-li{margin-bottom:.4rem}
-.job{background:var(--white);padding:1rem 1.25rem;margin:0 0 1rem;border-left:5px solid var(--ink)}
-.job h3{margin:0;font-size:1.1rem}
-.job .when{margin:0 0 .4rem;color:var(--muted);font-size:.95rem}
-.job p{margin:0}
-a{color:var(--brick)}
-footer{
-  text-align:center;
-  padding:1.2rem;
-  background:var(--ink);
-  color:var(--paper);
-  font-size:.9rem;
-}
-@media (max-width:480px){h1{font-size:2rem}}
+<!DOCTYPE html>
+<!--
+  Author: Indiana Brakken
+  GU username: YOUR-GU-USERNAME
+  Course: BMIS 235 - HTML-3
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Indiana Brakken">
+<title>Indie &amp; Co. | Services</title>
+<!-- this one line connects the page to the stylesheet -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html"><img src="img/home.png" alt="Home"></a>
+    <a href="services.html"><img src="img/services.png" alt="Services"></a>
+    <a href="process.html"><img src="img/process.png" alt="Our Process"></a>
+    <a href="contact.html"><img src="img/contact.png" alt="Contact"></a>
+</nav>
+
+<h1>Our Services</h1>
+<p>Every space is different, so Indie &amp; Co. offers a few ways to work together. Pick the one that fits your life, or mix and match.</p>
+
+<h2>Home Organizing</h2>
+<p>Closets, kitchens, pantries, garages, and playrooms. We sort, declutter, and set up systems that are easy to keep.</p>
+
+<h2>Office Organizing</h2>
+<p>Desks, filing systems, and supply rooms for small businesses and remote workers who want to get focused again.</p>
+
+<h2>Moving &amp; Unpacking</h2>
+<p>We pack with labels and unpack with a plan, so your new place feels like home in days instead of weeks.</p>
+
+<h2>Virtual Coaching</h2>
+<p>Prefer to do it yourself? Book a video session and we'll build a plan together.</p>
+
+<p>Curious how a project works? See <a href="process.html">Our Process</a>.</p>
+
+<footer>Built by Indiana Brakken &middot; BMIS 235</footer>
+
+</body>
+</html>
