@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
   Author: Indiana Brakken
@@ -7,58 +8,74 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Indiana Brakken">
 <title>Indie &amp; Co. | Home</title>
 <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <nav>
-    <a href="index.html"><img src="img/home.png" alt="Home"></a>
-    <a href="page1.html"><img src="img/page1.png" alt="Services"></a>
-    <a href="page2.html"><img src="img/page2.png" alt="Our Process"></a>
-    <a href="page3.html"><img src="img/page3.png" alt="Contact"></a>
+    <a href="index.html">
+        <img src="img/home.png" alt="Home">
+    </a>
+    <a href="page1.html">
+        <img src="img/page1.png" alt="Page 1 - Services">
+    </a>
+    <a href="page2.html">
+        <img src="img/page2.png" alt="Page 2 - Our Process">
+    </a>
+    <a href="page3.html">
+        <img src="img/page3.png" alt="Contact">
+    </a>
 </nav>
 
+<main>
+
 <h1>Indie &amp; Co.</h1>
+
 <p>Welcome to Indie &amp; Co., a professional organizing business that turns cluttered closets, overflowing garages, and chaotic home offices into calm, functional spaces.</p>
+
 <p>Browse our <strong>Services</strong>, see how <strong>Our Process</strong> works, or head to <strong>Contact</strong> to book a free consultation.</p>
 
-<h2>Try it: where should we start?</h2>
+<h2>Try it: Where should we start?</h2>
+
 <div class="showcase">
-    <style>
-        .showcase .picker button {
-            background: #ff4f9a; color: #0b1d3a; border: 0; border-radius: 20px;
-            padding: 10px 18px; margin: 4px; font-weight: bold; cursor: pointer;
-        }
-        .showcase .picker button:hover { background: #ffd1e6; }
-        .showcase #tip {
-            margin-top: 14px; padding: 14px; border-left: 4px solid #ff4f9a;
-            background: #14305c; color: #fff; min-height: 24px;
-        }
-    </style>
     <div class="picker">
+
         <p>Pick the space you want to tame:</p>
-        <button onclick="showTip('closet')">Closet</button>
-        <button onclick="showTip('office')">Home Office</button>
-        <button onclick="showTip('kitchen')">Kitchen</button>
-        <button onclick="showTip('garage')">Garage</button>
-        <div id="tip">Click a space to get your first organizing tip.</div>
+
+        <button type="button" onclick="showTip('closet')">Closet</button>
+        <button type="button" onclick="showTip('office')">Home Office</button>
+        <button type="button" onclick="showTip('kitchen')">Kitchen</button>
+        <button type="button" onclick="showTip('garage')">Garage</button>
+
+        <div id="tip">
+            Click a space to get your first organizing tip.
+        </div>
+
     </div>
-    <script>
-        function showTip(space) {
-            var tips = {
-                closet: "Turn every hanger backward. After 3 months, donate whatever is still facing the wrong way.",
-                office: "Give every paper a home: Act, File, or Shred. If it has no home, it goes in the recycling.",
-                kitchen: "Store items where you first use them: pans by the stove, mugs by the coffee maker.",
-                garage: "Group by zone (tools, sports, seasonal) and use wall space so the floor stays clear."
-            };
-            document.getElementById("tip").textContent = tips[space];
-        }
-    </script>
 </div>
 
-<footer>Built by Indiana Brakken &middot; BMIS 235</footer>
+</main>
+
+<footer>
+    Built by Indiana Brakken &middot; BMIS 235
+</footer>
+
+<script>
+function showTip(space) {
+    var tips = {
+        closet: "Turn every hanger backward. After 3 months, donate whatever is still facing the wrong way.",
+        office: "Give every paper a home: Act, File, or Shred. If it has no home, it goes in the recycling.",
+        kitchen: "Store items where you first use them: pans by the stove, mugs by the coffee maker.",
+        garage: "Group by zone (tools, sports, seasonal) and use wall space so the floor stays clear."
+    };
+
+    document.getElementById("tip").textContent = tips[space];
+}
+</script>
 
 </body>
 </html>
