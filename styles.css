@@ -113,3 +113,21 @@ footer {
     color: #555555;
     margin-top: 40px;
 }
+/* ---------- 9. TABLES ---------- */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+}
+th, td {
+    border: 1px solid #999999;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    font-weight: bold;
+    background-color: var(--header-green);
+    color: #ffffff;
+}
